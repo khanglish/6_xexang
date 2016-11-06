@@ -15,11 +15,12 @@ public:
 	unsigned int getHH();
 	unsigned int getMM();
 	unsigned int getSS();
+        unsigned int getSum();
 	std::string getSTime();
 	Time add(Time T2);
 	Time minus(Time T2);
 	bool increase(Time T2);
-        bool decrease(Time T2);
+	bool decrease(Time T2);
 };
 
 #endif

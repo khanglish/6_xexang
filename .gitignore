@@ -39,3 +39,5 @@ Debug/
 *.mk
 *.txt
 *.project
+/build/
+/dist/
