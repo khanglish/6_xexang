@@ -1,0 +1,28 @@
+ /*Point *diem1 = new Point(1,2);
+    cout << diem1->getX() << endl;
+    cout << diem1->getY() << endl;
+    Point *diem2 = new Point(3,4);
+    cout << diem1->distanceTo(*diem2) <<endl;
+    Time *a = new Time(15,18,32);
+    Time *b = new Time(14,0,0);
+    cout << a->getSTime() << endl;
+    cout << b->getSTime() << endl;
+    Time t = a->add(*b);
+    cout << t.getSTime() << endl;
+    a->minus(*b);
+    cout << a->getSTime() << endl;
+    a->increase(*b);
+    cout << a->getSTime() << endl;
+    a->decrease(*b);
+    cout << a->getSTime() << endl;
+    Car a("123");
+    cout << a.addPetrol(10) << endl;
+    cout << a.getDistance() << endl;
+    Point t = a.getGPS();
+    cout << t.getX() << endl;
+    cout << t.getY() << endl;
+    Point k(3,4);
+    Time n = a.run(k);
+    cout << n.getSTime() << endl;
+    //Car b("124",25,30,0.1);
+ */

@@ -1,5 +1,6 @@
 #include "Point.h"
-#include <math.h>
+
+using namespace std;
 
 Point::Point(){
 	x = 0;
@@ -24,6 +25,13 @@ double Point::getY(){
 	return y;
 }
 
-double Point::getDistance(){
-	double result = sqrt(x*x+y*y);
+double Point::distanceTo(Point P2){
+    return sqrt(pow(x-P2.getX() , 2) +pow(y-P2.getY(),2 ));
+}
+
+void Point::print(){
+    cout << "( " << x << " , " << y << " )" << endl ;
+}
+Point::~Point(){
+
 }

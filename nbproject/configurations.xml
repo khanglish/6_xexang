@@ -4,11 +4,10 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>6.h</itemPath>
+      <itemPath>Car.h</itemPath>
+      <itemPath>PStation.h</itemPath>
       <itemPath>Point.h</itemPath>
       <itemPath>Time.h</itemPath>
-      <itemPath>diem.h</itemPath>
-      <itemPath>khaibao.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -17,9 +16,12 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Car.cpp</itemPath>
+      <itemPath>PStation.cpp</itemPath>
       <itemPath>Point.cpp</itemPath>
       <itemPath>Time.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
+      <itemPath>testfile.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -49,7 +51,13 @@
           <standard>8</standard>
         </ccTool>
       </compileType>
-      <item path="6.h" ex="false" tool="3" flavor2="0">
+      <item path="Car.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Car.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PStation.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PStation.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Point.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -59,11 +67,9 @@
       </item>
       <item path="Time.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="diem.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="khaibao.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="testfile.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -86,7 +92,13 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="6.h" ex="false" tool="3" flavor2="0">
+      <item path="Car.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Car.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PStation.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PStation.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Point.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -96,11 +108,9 @@
       </item>
       <item path="Time.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="diem.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="khaibao.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="testfile.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>

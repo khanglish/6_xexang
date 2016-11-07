@@ -21,6 +21,8 @@ public:
 	Time minus(Time T2);
 	bool increase(Time T2);
 	bool decrease(Time T2);
+	int compare(Time T2);
+	~Time();
 };
 
 #endif

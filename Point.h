@@ -1,5 +1,7 @@
 #ifndef _point
 #define _point
+#include <math.h>
+#include <iostream>
 
 class Point{
 private:
@@ -9,9 +11,11 @@ public:
 	Point();
 	Point(double x, double y);
 	Point(const Point &P2); // copy 
-	double getDistance();
+	double distanceTo(Point P2);
 	double getX();
 	double getY();
+	void print();
+	~Point();
 };
 
 #endif 
