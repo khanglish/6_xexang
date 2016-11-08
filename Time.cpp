@@ -3,16 +3,12 @@
 using namespace std;
 
 Time::Time(unsigned int sum) {
+    this->sum = sum;
     hh = sum / 3600;
     sum -= 3600 * hh;
     mm = sum / 60;
     sum -= 60 * mm;
     ss = sum;
-    this->sum = sum;
-    //if(hh >= 24)
-    //{
-    //	hh = hh / 24 - 1;
-    //}
 }
 
 Time::Time(unsigned int hh, unsigned int mm, unsigned int ss) {
