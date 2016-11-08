@@ -1,6 +1,7 @@
 
 #include "Car.h"
-#define V 36
+#define V1 36 // V1 hoac V2 = 0 thi chuong trinh se chay sai 
+#define V2 48
 using namespace std;
 
 Car::Car(string id) { // con GPS thi mac dinh la 0,0
@@ -37,20 +38,22 @@ double Car::addPetrol(double Petrol){
 }
 
 Time Car::run(Point Des){
+    srand(time(NULL));
+    int V = V1 + rand() % (V2-V1+1);
     double distance = this->GPS.distanceTo(Des);
-    if(distance > this->getDistance() || V == 0){
-	//return Time(0);
-	Time temp(0);
-	return temp;
+    if(distance > this->getDistance()){
+	return Time(0);
+    }
+    if(V==0){
+	cout << "Van toc bang 0" << endl;
+	return Time(0);
     }
     else{
 	this->Petrol -= this->Waste * distance;
 	this->GPS = Des;
 	double t = (distance / V )* 3600;
 	unsigned int time = (unsigned int) nearbyint(t); 
-	//return Time(time);
-	Time temp(time);
-	return temp;
+	return Time(time);
     }
 }
 

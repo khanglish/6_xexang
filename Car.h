@@ -2,7 +2,8 @@
 #define CAR_H
 #include "Point.h"
 #include "Time.h"
-
+#include <time.h>
+#include <stdlib.h>
 class Car{
 private:
 	std::string id; // to recognize car
