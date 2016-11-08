@@ -26,28 +26,28 @@ int main() {
 	    if (s_x.size() == 0) { // kiem tra con diem du lich hay khong
 		break;
 	    }
-	    x1.getGPS().print();
-	    vector<double> d_x1; // chua khoang cach den cac diem du lich con lai. 
+	    x[j].getGPS().print();
+	    vector<double> d_x; // chua khoang cach den cac diem du lich con lai. 
 	    for (int i = 0; i < s_x.size(); i++) {
-		d_x1.push_back(x1.getGPS().distanceTo(s_x[i]));
+		d_x.push_back(x[j].getGPS().distanceTo(s_x[i]));
 	    }
 	    int min = 0; // vi tri diem du lich gan nhat
 	    for (int i = 0; i < s_x.size(); i++) {
-		if (d_x1[min] > d_x1[i]) {
+		if (d_x[min] > d_x[i]) {
 		    min = i;
 		}
 	    }
-	    Time temp(x1.run(s_x[min])); // cho xe chay den diem gan nhat
+	    Time temp(x[j].run(s_x[min])); // cho xe chay den diem gan nhat
 	    if (temp.compare(Time(0)) == 0) { // neu khong du xang
-		if (o.sale(x1, x1.getCapacity())) {//kiem tra co gan tram xang hay khong 
+		if (o.sale(x[j], x[j].getCapacity())) {//kiem tra co gan tram xang hay khong 
 		    continue; // neu gan thi do day binh va tiep tuc.
 		} else {
 
-		    Time temp2(x1.run(o.getPlace())); // chay den tram xang
+		    Time temp2(x[j].run(o.getPlace())); // chay den tram xang
 		    if (temp2.compare(Time(0)) == 0) { // neu van khong du xang
 			break; // ket thuc
 		    } else {
-			o.sale(x1, x1.getCapacity());
+			o.sale(x[j], x[j].getCapacity());
 			cout << temp.getSTime() << endl << endl;
 			time_x.increase(temp2); // neu du thi cong thoi gian va chay den do xang
 		    }
@@ -56,7 +56,7 @@ int main() {
 		s_x.erase(s_x.begin() + min);
 		time_x.increase(temp);
 	    }
-	    x1.getGPS().print();
+	    x[j].getGPS().print();
 	    cout << temp.getSTime() << endl << endl;
 	}
 	cout << "Thoi gian tong xe "<<j+1<<": " << time_x.getSTime() << endl  << endl;
