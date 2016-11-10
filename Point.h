@@ -15,6 +15,7 @@ public:
 	double getX();
 	double getY();
 	void print();
+	bool is(Point P2);
 	~Point();
 };
 

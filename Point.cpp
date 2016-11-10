@@ -32,6 +32,13 @@ double Point::distanceTo(Point P2){
 void Point::print(){
     cout << "( " << x << " , " << y << " )" << endl ;
 }
+bool Point::is(Point P2){
+    if(this->x != P2.getX() || this->y != P2.getY())
+    {
+	return false;
+    }
+    return true;
+}
 Point::~Point(){
 
 }
